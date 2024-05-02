@@ -10,6 +10,7 @@ wget -q https://raw.githubusercontent.com/feely666/udp-custom/main/udp-custom.sh
 [optional port exclude separated by coma, ex. 53,5300]
 
 * How to check UDP port
+
 ``
 netstat -uln | grep 'udp' | awk '{print $4}' | awk -F: '{print $NF}' | sort -n | uniq | paste -sd ',' -
 ``
